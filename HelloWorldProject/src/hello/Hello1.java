@@ -7,24 +7,15 @@ import java.util.Scanner;
 public class Hello1 {
 	
 	
-	public static void main(String args[]){
-		//Scanner object for capturing the user input
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter the number:");
-		//Stored the entered value in variable
-		int num = scanner.nextInt();
-		//Called the user defined function fact
-		int factorial = fact(num);
-		System.out.println("Factorial of entered number is: "+factorial);
-		}
-		static int fact(int n)
-		{
-		int output;
-		if(n==1){
-		return 1;
-		}
-		//Recursion: Function calling itself!!
-		output = fact(n-1)* n;
-		return output;
-		}
-		}
+	 public static void main(String args[]) {
+			int n = 100;
+			System.out.print("Even Numbers from 1 to "+n+" are: ");
+			for (int i = 1; i <= n; i++) {
+			   //if number%2 == 0 it means its an even number
+			   if (i % 2 == 0) {
+				System.out.print(i + " ");
+			   }
+			}
+	 }
+}
+		
